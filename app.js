@@ -7,7 +7,10 @@ const users=require("./models/userSchema");
 const cors =require("cors");
 const router=require("./routes/router");
 
-const port = 8003;
+// const port = 8003;
+
+// code for hosting
+const port =process.env.PORT || 8003;
 
 app.use(cors());
 app.use(express.json());
